@@ -108,7 +108,7 @@ int main(int argc, char** argv)
                   << "the \"xeniumflash.jed\" file first! **" << std::endl;
         return -1;
     }
-    else if ((manufacturer == 0xC2) && (deviceid == 0x49) || deviceid == 0xC4))
+    else if ((manufacturer == 0xC2) && (deviceid == 0x49 || deviceid == 0xC4))
     {
         std::cout << "OK [Macronix MX29LV160DB]" << std::endl << "PLEASE NOTE: "
 		  << "You must flash version 2.3.5 for this flash type" << std::endl; 
