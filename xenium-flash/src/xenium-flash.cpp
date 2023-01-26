@@ -110,7 +110,8 @@ int main(int argc, char** argv)
     }
     else if ((manufacturer == 0xC2 && deviceid == 0x49) || (manufacturer == 0xC2 && deviceid == 0xC4))
     {
-        std::cout << "OK [Macronix MX29LV160DB]" << std::endl; 
+        std::cout << "OK [Macronix MX29LV160DB]" << std::endl << "PLEASE NOTE: "
+		  << "You must flash version 2.3.5 for this flash type" << std::endl; 
     }
     else if (manufacturer != 0x01 || deviceid != 0xC4)
     {
